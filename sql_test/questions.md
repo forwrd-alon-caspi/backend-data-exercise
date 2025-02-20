@@ -33,9 +33,9 @@ You can assume:
 
 2.  AVG daily **new**, in last 90 days from last run
 
-    1.  How will you handle days with no new records
+    *  How will you handle days with no new records
 
-    2.  If needed, assume you have a table with all calendar days (e.g. _**calendar\_days(day:date)**_)
+    *  You can assume you have a table with all calendar days (_**calendar\_days(day:date)**_)
 
 3.  AVG time to convert, in last 90 days from last run
 
