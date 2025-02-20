@@ -18,7 +18,7 @@ You can assume:
 
 <br /> 
 
-**Provide an SQL queries that calculate:**
+**Provide SQL queries that calculate:**
 
 1. Number of predicted records in the last run (that had predictions).
 
