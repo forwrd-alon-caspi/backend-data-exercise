@@ -32,4 +32,4 @@ You can assume:
 
     *Performance = count(score in (Excellent, Good) and status=Success) / count(status=Success)
 
-**Bonus**: consider Qs #3 and #4 different calculator for Success (Excellent + Good) and Fail (Fair + Poor)
+**Bonus**: Add the Fail performance (Fail related score  are Fair + Poor)
