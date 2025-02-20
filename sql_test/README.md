@@ -16,20 +16,24 @@ You can assume:
 *   [Data setup](./data.sql)
 *   You use the following SQL web tool - Fiddle [https://www.db-fiddle.com/](https://www.db-fiddle.com/) 
 
+<br /> 
 
 **Provide an SQL queries that calculate:**
 
-1.  Number of predicted records in the last run (that had predictions)
+1. Number of predicted records in the last run (that had predictions)
 
-2.  AVG time to close, for records that were closed in the last 7 days from last run
+2. AVG time to close, for records that were closed in the last 7 days from last run
 
-3.  MIN, MAX and AVG daily **new** records, in last 7 days from last run
+3. 
+   a. AVG daily **new** records, in last 7 days from last run
     *  new record = a record that was first predicted in a given date or time interval.
-    *  How will you handle days with no new records?
-    *  For simplicity, you can assume you have a table with all calendar days (_**calendar\_days(day:date)**_)
 
-4. Calculate the last 7 days accumulated SUCCESS performance, per day, for each day in the last 3 days, based on the close\_date .
+   b. Add the MIN and MAX new daily record.
+   *  How will you handle days with no new records?
+   *  For simplicity, you can assume you have a table with all calendar days (_**calendar\_days(day:date)**_)
 
-    *Performance = count(score in (Excellent, Good) and status=Success) / count(status=Success)
+4. 
+   a. Calculate the last 7 days accumulated SUCCESS performance, per day, for each day in the last 3 days, based on the close\_date.
+       *Performance = count(score in (Excellent, Good) and status=Success) / count(status=Success)
 
-**Bonus**: Add the Fail performance (Fail related score  are Fair + Poor)
+   b. Add the Fail performance (Fail related score  are 'Fair' + 'Poor', status = 'Fail')
