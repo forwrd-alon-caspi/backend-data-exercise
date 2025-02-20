@@ -50,6 +50,7 @@ You can assume the existence of:
 
 ![Diagram](./system_design.png)
 
-#### Bonus Distributed rate limit (Data Collection) - bonus/if the topic is raised
+### Bonus
+#### Distributed rate limit (Data Collection) - bonus/if the topic is raised
 
 *   Data collection - we have a resource which has a rate limit. We would like to access this resource through multiple different clients and respect the rate limit. Suggest a way to achieve it. Identify pros/cons (limitations ,etc)
