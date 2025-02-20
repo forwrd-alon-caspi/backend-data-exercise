@@ -20,10 +20,11 @@ You can assume:
 
 *   The use-case pipeline runs once a day (start and end within the same day)
 
-*   The data is updated (atomic) at the end of a successful run
+*   The data is updated (atomic) at the end of a successful run 
 
+*   [Data setup](./data.sql)
 
-*You use the following SQL web tool - Fiddle [https://www.db-fiddle.com/](https://www.db-fiddle.com/)
+*   You use the following SQL web tool - Fiddle [https://www.db-fiddle.com/](https://www.db-fiddle.com/) 
 
 
 **Provide an SQL queries  that calculate:**
