@@ -1,5 +1,5 @@
-3\. SQL
--------
+SQL Exercise
+------------
 
 Given a final table name _**use\_case\_predictions**_ in a relational DB (SQL based), with the following columns:
 
@@ -23,12 +23,10 @@ You can assume:
 *   The data is updated (atomic) at the end of a successful run
 
 
-**Exercise DBs:**
-
-*   Fiddle: [https://www.db-fiddle.com/f/wHYKuqXG2RgKs1v3gX5NH8/0](https://www.db-fiddle.com/f/wHYKuqXG2RgKs1v3gX5NH8/0)
+*You use the following SQL web tool - Fiddle [https://www.db-fiddle.com/](https://www.db-fiddle.com/)
 
 
-Provide an SQL queries  that calculate:
+**Provide an SQL queries  that calculate:**
 
 
 1.  Number of predicted records in the last run (that had predictions)
