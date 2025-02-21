@@ -12,7 +12,7 @@ event_type: list[str]
 
 
 ### Implement:
-A function that given the data volumes matrix returns a sub-optimal list of API parameters to be used for fetching the data, that:
+A function that given the data volumes matrix returns a <u>**sub-optimal**</u> list of API parameters to be used for fetching the data, that:
 * Not loose data, when possible
 * Minimize the amount of calls
 
