@@ -16,7 +16,12 @@ A function that given the data volumes matrix returns a sub-optimal list of API 
 * Not loose data, when possible
 * Minimize the amount of calls
 
+**_Use the code skeleton ([code_test.py](./code_test.py)) 
+and the data volume test file ([matrix.csv](.matrix.csv)) 
+to provide and test you answer._**
 
-**Followup question:**
+<br/>
+
+**Follow-up question:**
 * Assuming there is a rate limit of 60 calls per hour and there are more than 60 API calls required - how would you handle them? 
 * Bonus - Any idea for a potential optimal algorithm
