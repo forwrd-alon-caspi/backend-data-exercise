@@ -1,8 +1,8 @@
 Forwrd Backend & Data Engineering Technical Interview
 -----------------------------------------------------
 
-Welocme to Forwrd.ai Technical Interview!
-The interview will contain on or more of the following exercises:
+Welcome to Forwrd.ai's Technical Interview!
+<br/>The interview will contain one or more of the following exercises:
 
 1. [System Design Exercise](./system_design)
 
