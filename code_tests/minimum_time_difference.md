@@ -4,6 +4,20 @@ Minimum Time Difference
 Given a list of 24-hour clock time points in "HH:MM" format, 
 return the minimum minutes difference between any two time-points in the list.
 
+<br/>
+
+```python
+def find_min_difference(time_points: list[str]) -> int:
+    return 1440
+
+if __name__ == '__main__':
+    time_points = ["00:00","16:54","3:32"]
+    result = find_min_difference(time_points)
+    print(result)
+
+```
+
+<br/>
 
 **Examples:**
 
@@ -16,18 +30,8 @@ return the minimum minutes difference between any two time-points in the list.
 > Input: time_points = ["00:00","16:54","3:32"]
 >> Output: 212
 
+<br/>
 
 **Constraints:**
 * 2 <= len(time_points) <= 2 * 104
 * time_points[i] is in the format "HH:MM".
-
-```python
-def find_min_difference(time_points: list[str]) -> int:
-    return 1440
-
-if __name__ == '__main__':
-    time_points = ["00:00","16:54","3:32"]
-    result = find_min_difference(time_points)
-    print(result)
-    
-```
