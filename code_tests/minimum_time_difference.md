@@ -35,3 +35,8 @@ if __name__ == '__main__':
 **Constraints:**
 * 2 <= len(time_points) <= 2 * 104
 * time_points[i] is in the format "HH:MM".
+
+<br/>
+<br/>
+
+**[Can be implemented using Leetcode (also in other programming languages)](https://leetcode.com/problems/minimum-time-difference/)**
