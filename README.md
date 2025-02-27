@@ -6,9 +6,9 @@ Welcome to Forwrd.ai's Technical Interview!
 
 1. [System Design Exercise](./system_design)
 
-2. [Code Exercise](./system_design)
+2. [Code Exercise](./code_tests)
 
-3. [SQL Exercise](./system_design)
+3. [SQL Exercise](./sql_test)
 
 <br/> 
 
