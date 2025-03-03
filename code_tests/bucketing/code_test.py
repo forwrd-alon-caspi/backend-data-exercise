@@ -46,12 +46,12 @@ def read_csv(path: str) -> List[Metadata]:
 #     {
 #         "from_day": "2024-08-01",
 #         "to_day": "2024-08-03",
-#         event_type": ["LINK_FOLDER_CREATED", "INVITE_TO_FORWRD", "CLICK_RESOURCE_CARD"]
+#         event_type": ["LINK_FOLDER_CREATED"]
 #     },
 #     {
 #         "from_day": "2024-08-04",
 #         "to_day": "2024-08-10",
-#         "event_type": ["LINK_FOLDER_CREATED", "INVITE_TO_FORWRD", "CLICK_RESOURCE_CARD"]
+#         "event_type": ["LINK_FOLDER_CREATED"]
 #     },
 #     ....
 # ]
