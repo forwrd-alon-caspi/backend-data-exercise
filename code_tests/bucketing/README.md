@@ -17,7 +17,7 @@ A function that given the data volumes matrix returns a <u>**sub-optimal**</u> l
 * Minimize the amount of calls
 
 **_Use the code skeleton ([code_test.py](./code_test.py) or [code_test.java](./code_test.java)) 
-and the data volume test file ([matrix.csv](.matrix.csv)) 
+and the data volume test file ([matrix.csv](./matrix.csv)) 
 to provide and test your answer._**
 
 <br/>
