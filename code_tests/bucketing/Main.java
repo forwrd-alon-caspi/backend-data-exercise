@@ -11,7 +11,6 @@ import java.util.List;
 
 public class Main {
 
-    // Equivalent of the Python Metadata dataclass
     public static class Metadata {
         private String day;
         private String eventType;
@@ -23,7 +22,6 @@ public class Main {
             this.count = count;
         }
 
-        // Getters and setters (optional)
         public String getDay() {
             return day;
         }
@@ -49,7 +47,6 @@ public class Main {
         }
     }
 
-    // Equivalent of the Python RequestInput dataclass
     public static class RequestInput {
         private String fromDay; // inclusive
         private String toDay;   // inclusive
@@ -61,7 +58,6 @@ public class Main {
             this.eventType = eventType;
         }
 
-        // Getters and setters (optional)
         public String getFromDay() {
             return fromDay;
         }
