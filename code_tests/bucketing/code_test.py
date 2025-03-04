@@ -1,5 +1,6 @@
 import dataclasses
 import json
+from datetime import date, timedelta
 from typing import List
 
 
@@ -14,7 +15,7 @@ class Metadata:
 class RequestInput:
     from_day: str # inclusive
     to_day:str # inclusive
-    event_type:List[str]
+    event_types:List[str]
 
 
 def read_csv(path: str) -> List[Metadata]:
@@ -60,8 +61,37 @@ def get_request_input(matrix: List[Metadata]) -> List[RequestInput]:
     return []
 
 
+def validate(matrix: List[Metadata], request_input_list: List[RequestInput]):
+    def __get_key(day, event_type):
+        return f'{day}=$={event_type}'
+
+    data = {__get_key(m.day, m.event_type): m.count for m in matrix}
+    actual_count = sum(data.values())
+    total_entries = len(data)
+
+    total_count = 0
+    for r in request_input_list:
+        request_count = 0
+        curr_day = r.from_day
+        end_day_d = date.fromisoformat(r.to_day)
+        while date.fromisoformat(curr_day) <= end_day_d:
+            for t in r.event_types:
+                key = __get_key(curr_day, t)
+                count = data.get(key)
+                del data[key]
+                request_count += count
+                total_count += count
+            next_day_d = date.fromisoformat(curr_day) + timedelta(days=1)
+            curr_day = next_day_d.isoformat()
+        if len(r.event_types) > 1:
+            assert request_count <= 100_000, f"total request count exceeded 100K: {request_count}"
+
+    assert actual_count == total_count, f"actual_count: {actual_count}. total_count: {total_count}"
+    assert len(data) == 0, f"not all data used - ({len(data)}/{total_entries}). Missing records: {data}"
+
+
 if __name__ == '__main__':
     matrix = read_csv('matrix.csv')
     request_input_list = get_request_input(matrix)
-    print(json.dumps([dataclasses.asdict(r) for r in request_input_list], indent=2))
-
+    validate(matrix, request_input_list)
+    # print(json.dumps([dataclasses.asdict(r) for r in request_input_list], indent=2))
